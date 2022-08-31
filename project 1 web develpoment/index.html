@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8e7b84f57c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">
+        <span class="text-highlight1">to</span
+        ><span class="text-highlight2">do</span> list
+      </h1>
+    </header>
+    <main class="container">
+      <div class="empty-list-instruction">
+        <i class="fa-solid fa-list-check"></i>
+        <p>Your list is empty. Add your first todo in the field below.</p>
+        <p>What do you want to get done today?</p>
+      </div>
+      <div class="todo-wrapper">
+        <nav class="todo-nav">
+          <ul class="menu">
+            <li><button id="all-todos" class="active">All</button></li>
+            <li><button id="pending-todos">Pending</button></li>
+            <li><button id="completed-todos">Completed</button></li>
+          </ul>
+          <button id="clear-list" class="btn">Clear list</button>
+        </nav>
+        <ul class="todo-list"></ul>
+      </div>
+      <form id="add-todo-form">
+        <label for="add-todo" class="visuallyhidden">Add a new todo:</label>
+        <div class="add-field">
+          <input
+            type="text"
+            name="add-todo"
+            id="add-todo"
+            placeholder="add a new todo..."
+          />
+          <button type="submit" class="btn" id="add-btn">ADD</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      Made with &#9825; by
+      <a href="http://github.com/julianachagas" target="_blank"
+        >Kajal pandey</a
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
